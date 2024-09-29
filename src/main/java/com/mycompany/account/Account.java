@@ -124,7 +124,24 @@ else{
       Scanner input = new Scanner(System.in);
       Account Acc = new Account();
       
-      
+      System.out.println("Enter your username");
+      Acc.User=input.next();
+      System.out.println("Enter your password");
+      Acc.Pass=input.next();
+      System.out.println("Enter your firstName");
+      Acc.userName=input.next();
+      System.out.println("Enter your lastName");
+      Acc.userLast=input.next();
+       System.out.println(Acc.registerUser());
+ 
+     if(Acc.checkUsername()==true && (Acc.checkPasswordComplexity())==true){
+     System.out.println("Enter your username");
+     Acc.user=input.next();
+       System.out.println("Enter your password");
+       Acc.pass=input.next();
+      System.out.println(Acc.returnLoginStatus()); 
+     
+   
  
      
      
